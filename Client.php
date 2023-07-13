@@ -47,6 +47,7 @@
                 echo "<p class=reservation>".count($this->reservations)." réservations</>";
                 echo "<ul>";
                 // affiche les réservations du client
+                $prixTotal = 0;
                 foreach ($this->reservations as $reservation) {
                     echo "<li>".$reservation->getChambre()->getHotel()->titreHotel().
                     "Chambre : ".$reservation->getChambre()->getNumeroChambre().
@@ -55,8 +56,9 @@
                     " € - Wifi : ". $reservation->getChambre()->getWifi() ." )"." du ".$reservation->getDateDebut().
                     " au ".$reservation->getDateFin()."</li>";
                     // affiche le prix en fonction du nombre de jour reservé
-                    echo "<p>Prix : ".$reservation->getChambre()->getPrix() * $reservation->nombreDeJour()." €</p>";
+                    $prixTotal += $reservation->getChambre()->getPrix() * $reservation->nombreDeJour();
                 }
+                echo "<p>Prix total : ".$prixTotal." €</p>";
                 echo "</ul>";
                 echo "</div>";
             }
