@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+p {
+    color: rgb(113, 113, 113);
+    font-size: 13px;
+    margin: 2px;
+}
+
+.infoHotel {
+    background-color: rgb(239, 249, 253);
+    width: fit-content;
+    padding: 10px;
+    margin: 3px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+h5 {
+    margin-bottom: 10px;
+}
+
+.reservation {
+    background-color: rgb(54, 210, 148);
+    color: white;
+    width: fit-content;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 8px;
+}
+
+li {
+    list-style: none;
+    color: rgb(113, 113, 113);
+    font-size: 13px;
+}
+
+table {
+    border : 1px solid rgb(203, 200, 200);
+    padding: 10px;
+}
+
+.tablehead {
+    width: 230px;
+}
+
+.tablehead2 {
+    width: 100px;
+}
+
+th {
+    color: rgb(152, 151, 151);
+    font-weight: 300;
+    text-align: start;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+td {
+    padding: 4px 0px;
+    color: rgb(113, 113, 113);
+    font-weight: 300;
+}
+
+.dispo {
+    background-color: rgb(54, 210, 148);
+    font-weight: 500;
+    color: white;
+    border-radius: 3px;
+    font-size: 12px;
+    padding: 1px 2px;
+}
+
+.indispo {
+    background-color: rgb(249, 94, 117);
+    font-weight: 500;
+    color: white;
+    font-size: 12px;
+    padding: 1px 2px;
+}
